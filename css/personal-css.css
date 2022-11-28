@@ -61,6 +61,9 @@ a{
 .middle2-section{
     background: #ffa532;
 }
+.bottom-section{
+    background: #d5ec6f;
+}
 .section h1{
     font-size: 200px;
     font-weight: 900;
@@ -92,10 +95,18 @@ a{
     color: #728E93;
 }
 .content-theme-3 h1{
-    color: rgba(133, 196, 255, 0.7);
+    color: rgba(132, 212, 255, 0.82);
     text-shadow: 0 20px 40px rgba(0,0,0,.5);
 }
 .content-theme-3 p,
 .content-theme-3 a{
+    color: #647680;
+}
+.content-theme-4 h1{
+    color: rgb(222, 82, 179);
+    text-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+.content-theme-4 p,
+.content-theme-4 a{
     color: #647680;
 }
