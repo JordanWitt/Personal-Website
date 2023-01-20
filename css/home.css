@@ -61,9 +61,9 @@ a:hover{
     -webkit-transform:translateX(100%);
     transform:translateX(100%);
     /* Apply animation to this element */
-    -moz-animation: marquee 15s linear infinite;
-    -webkit-animation: marquee 15s linear infinite;
-    animation: marquee 15s linear infinite;
+    -moz-animation: marquee 25s linear infinite;
+    -webkit-animation: marquee 25s linear infinite;
+    animation: marquee 25s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes marquee {

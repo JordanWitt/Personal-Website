@@ -82,5 +82,5 @@ function playSound() {
 //CODEPEN EXAMPLE **** NOT MY CODE
 //CURSOR FOUND ON https://github.com/tholman/cursor-effects
 window.addEventListener('load', (event) => {
-    new cursoreffects.fairyDustCursor({colors: ["#ffa532", "#00ff00", "#de52b3"]});
+    new cursoreffects.fairyDustCursor({colors: ["rgb(255,31,127)", "rgb(255,169,255)", "rgb(248,60,255)"]});
 });
