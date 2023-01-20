@@ -13,47 +13,50 @@
 <body>
 <!--NAV AREA-->
 <hr class="mt-5">
-<div class="container">
+<div class="marquee" id="marqueeShow">
+    <span id="marqueeText">THIS IS A MARQUEE</span>
+</div>
+<div class="container" id="align">
     <div class="hstack gap-1">
-        <p>LOGO</p>
+        <p class="jordan" id="jordan"><a href="/">JORDAN WITT</a></p>
         <div class="container text-center">
-            <div class="row m-5 ">
+            <div class="row m-3 ">
                 <hr>
-                <div class="col-8 col-sm-4"><a href="/" id="project-one"><p>PROJECT-1</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-two"><p>PROJECT-1</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-three"><p>PROJECT-1</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-one"><p>MOVIE PROJECT</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-two"><p>COFFEE PROJECT</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-three"><p>AD-LISTER</p></a></div>
                 <!-- Force next columns to break to new line -->
                 <div class="w-100"></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-four"><p>PROJECT-1</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-five"><p>PROJECT-1</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-six"><p>PROJECT-1</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-four"><p>DATABASE DESIGN</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-five"><p>CONTACT MANAGER</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-six"><p>PROJECT-6</p></a></div>
                 <hr>
             </div>
         </div>
     </div>
-    <div class="clearfix mt-5">
-
-        <p class="p-3">
-            A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding
-            quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+    <div class="clearfix mt-5 p-5" id="border">
+        <p class="p-4" id="paragraph-one">
+            A paragraph of placeholder text.
         </p>
-        <div class="hstack gap-2">
+        <div class="hstack gap-2" >
+            <div class="img">
             <img id="project-display" src="images/8-bit-brew-final.jpg" class="col-4 col-sm-4 float-md-end mb-3 ms-md-3"
                  alt="...">
-        <p class="p-3">
+            </div>
+        <p class="p-4" id="paragraph-two">
             As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with
             some actual content in here, rather than just this boring placeholder text that goes on and on, but actually
             conveys no tangible information at. It simply takes up space and should not really be read.
         </p>
         </div>
-            <p class="p-3">
+            <p class="p-4" id="paragraph-three">
                 And yet, here you are, still persevering in reading this placeholder text, hoping for some more
                 insights, or
                 some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
             </p>
     </div>
     <div class="hstack gap-1">
-        <p>FOOTER</p>
+        <p>THNX 4 <br> STOPPING BY:</p>
         <div class="container text-center">
             <div class="row m-5 ">
                 <hr>
@@ -67,9 +70,10 @@
 </div>
 <hr>
 
-
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+<script src="js/personal-js.js"></script>
 </body>
 </html>

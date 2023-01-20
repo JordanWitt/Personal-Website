@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2d1c2b0-f012-4860-ae96-60b86f7a3fa7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/8-bit-brew-final.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal Website.html" beforeDir="false" afterPath="$PROJECT_DIR$/Personal Website.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/personal-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/personal-css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/personal-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/personal-js.js" afterDir="false" />
-    </list>
+    <list default="true" id="c2d1c2b0-f012-4860-ae96-60b86f7a3fa7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +50,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.space&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -87,7 +81,15 @@
       <workItem from="1671051808657" duration="6845000" />
       <workItem from="1671208763613" duration="5266000" />
       <workItem from="1673552103420" duration="1976000" />
-      <workItem from="1673631347120" duration="4134000" />
+      <workItem from="1673631347120" duration="10942000" />
+      <workItem from="1674054669349" duration="598000" />
+      <workItem from="1674074146751" duration="5482000" />
+      <workItem from="1674081498147" duration="548000" />
+      <workItem from="1674082071804" duration="1525000" />
+      <workItem from="1674141024171" duration="54000" />
+      <workItem from="1674141138088" duration="6922000" />
+      <workItem from="1674149908650" duration="2024000" />
+      <workItem from="1674157273525" duration="15592000" />
     </task>
     <servers />
   </component>
@@ -107,5 +109,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

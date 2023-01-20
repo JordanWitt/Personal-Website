@@ -1,7 +1,92 @@
+*{
+    font-family: monospace;
+}
+#border{
+    border: 2px solid #3b4649;
+    background-color: rgba(235, 255, 161, 0.54);
+}
 body{
-    background-color: #fffba1;
+    background-color: rgb(255, 251, 161);
 }
-#project-display:hover{
-    height: 1250px;
-    width: 850px;
+.jordan{
+    font-size: 30px;
+    text-align: center;
 }
+.marquee{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(249, 75, 255);
+}
+/*marquee*/
+.marquee {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.marquee span {
+    font-size: 1em;
+    color: #3b4649;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: marquee 15s linear infinite;
+    -webkit-animation: marquee 15s linear infinite;
+    animation: marquee 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes marquee {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes marquee {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes marquee{
+    0%   {
+        -moz-transform: translateX(100%); /* Firefox bug fix */
+        -webkit-transform: translateX(100%); /* Firefox bug fix */
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%); /* Firefox bug fix */
+        -webkit-transform: translateX(-100%); /* Firefox bug fix */
+        transform: translateX(-100%);
+    }
+}
+/*project display*/
+#project-display{
+    height: 300px;
+    width: 240px;
+    box-shadow: 10px 15px 15px;
+}
+#project-display:hover {
+    transition: width 1s, height 1s, transform 1s ease;
+    transform-origin: -50%;
+    transform: scale(2);
+    cursor: zoom-in;
+}
+#paragraph-one{
+    font-size: 30px;
+}
+#paragraph-two{
+    font-size: 15px;
+}
+#paragraph-three{
+    font-size: 15px;
+    float: right;
+}
+
