@@ -1,6 +1,23 @@
 *{
     font-family: monospace;
 }
+html{
+    cursor: none;
+}
+audio{
+    display: none;
+}
+#circularCursor {
+    background-color: transparent;
+    border:1px solid black;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    position: absolute;
+    z-index: 1;
+}
 #border{
     border: 2px solid #3b4649;
     background-color: rgba(235, 255, 161, 0.54);
@@ -18,9 +35,11 @@ body{
 a{
     text-decoration: none;
     color: black;
+    cursor: none;
 }
 a:hover{
     color: rgb(249, 75, 255);
+    cursor: none;
 }
 /*marquee*/
 .marquee {
@@ -67,6 +86,9 @@ a:hover{
         transform: translateX(-100%);
     }
 }
+#project-one:hover{
+
+}
 /*project display*/
 #project-display{
     height: 300px;
@@ -76,8 +98,7 @@ a:hover{
 #project-display:hover {
     transition: width 1s, height 1s, transform 1s ease;
     transform-origin: -50%;
-    transform: scale(2);
-    cursor: zoom-in;
+    transform: scale(2.5);
 }
 #paragraph-one{
     font-size: 30px;

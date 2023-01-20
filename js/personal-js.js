@@ -1,14 +1,14 @@
-//grabbing the ids for the event listener function on my project display
+//PROJECT IN NAV GRABS
 let jordanImg = document.getElementById("jordan");
 let projectOne = document.getElementById("project-one");
 let projectTwo = document.getElementById("project-two");
 let projectThree = document.getElementById("project-three");
 let projectFour = document.getElementById("project-four");
 let projectFive = document.getElementById("project-five");
-let projectSix = document.getElementById("project-six");
+let projectSix = document.getElementById("project-six"); //not being used...YET
 let projectDisplay = document.getElementById("project-display");
 
-//separate grabs
+//PARAGRAPH GRABS
 let paragraghOne = document.getElementById("paragraph-one");
 let paragraghTwo = document.getElementById("paragraph-two");
 let paragraghThree = document.getElementById("paragraph-three");
@@ -25,13 +25,18 @@ projectOne.addEventListener("mouseover", function (){
     projectDisplay.src = "images/movie-app.jpg";
     paragraghOne.innerText = "Movie App Project:"
     paragraghTwo.innerText ="This was our first introduction into using apis and creating fetch requests\n\n 1. I created a GitHub organization and created a repository to put our code in there.\n\n 2. Used my own remixed URL to fetch results inside my project to perform RESTful API requests\n\n 3. Utilized CRUD (Create, Read, Update, Delete)\n\n 4. Acquired new CSS and HTML techniques"
-    paragraghThree.innerText = "Pros:\n 1. More Work with Paired Programming\n 2. Successfully performing API requests\n 3. Make a full front-end web application\n\n Cons:\n 1. Features need work/updated\n 2. Scheduling conflicts and git conflicts"
+    paragraghThree.innerText = "Pros:\n 1. More Work with Paired Programming\n 2. Successfully performing API requests\n 3. Make a full front-end web application\n\n Cons:\n 1. Features need work/updated\n 2. Scheduling conflicts and GitHub conflicts"
 });
 projectTwo.addEventListener("mouseover", function (){
     projectDisplay.src = "images/8-bit-brew-final.jpg";
+    paragraghOne.innerText = "Coffee Project:"
+    paragraghTwo.innerText = "Second paired programming projects\n Main focuses were bootstrap JavaScript functionality\n\n 1. Updated old HTML style and refactored tables\n\n2. Sorted coffees in ascending order\n\n3. Added search functionality"
+    paragraghThree.innerText ="Pros:\n1. Paired programming and version control\n2. Understanding Bootstrap grid layout\n 3. Working with a partner\n\n Cons:\n 1. A lot of the functionality was there,\n so at the time it felt difficult to debug\n 2. Could have used an extra day or two\n tightening it up\n 3. Small GitHub conflicts"
 });
 projectThree.addEventListener("mouseover", function (){
     projectDisplay.src = "images/adlister.jpg";
+    paragraghOne.innerText = "Ad-Lister Project:"
+    paragraghTwo.innerText = "Back-end Application for creating and displaying ads\n\n1. "
 });
 projectFour.addEventListener("mouseover", function (){
     projectDisplay.src = "images/database.jpg";
@@ -49,11 +54,33 @@ function getJokes() {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            data.forEach( function (fact) {
+            data.forEach( function (data) {
                 container.innerHTML = `<div class="marquee" id="marqueeShow">\n` +
-                    `    <span id="marqueeText">${fact.joke}</span>\n` +
+                    `    <span id="marqueeText">${data.joke}</span>\n` +
                     `</div>`;
             })
         });
 }
 getJokes();
+
+//CURSOR
+$(document).ready(function() {
+    $(document).on('mousemove', function(e) {
+        $('#circularCursor').css({
+            left: e.pageX,
+            top: e.pageY
+        });
+    })
+});
+
+//HOVER SOUND
+function playSound() {
+    let audio = new Audio("sounds/zapsplat_multimedia_button_click_007_53868.mp3");
+    audio.play();
+}
+
+//CODEPEN EXAMPLE **** NOT MY CODE
+//CURSOR FOUND ON https://github.com/tholman/cursor-effects
+window.addEventListener('load', (event) => {
+    new cursoreffects.fairyDustCursor({colors: ["#ffa532", "#00ff00", "#de52b3"]});
+});

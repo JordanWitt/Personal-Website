@@ -11,25 +11,27 @@
 
 </head>
 <body>
-<!--NAV AREA-->
+<!--NAV AREA AND CURSOR-->
+<div id="circularCursor"></div>
+
 <hr class="mt-5">
 <div class="marquee" id="marqueeShow">
     <span id="marqueeText">THIS IS A MARQUEE</span>
 </div>
 <div class="container" id="align">
     <div class="hstack gap-1">
-        <p class="jordan" id="jordan"><a href="/">JORDAN WITT</a></p>
+        <p class="jordan" id="jordan"><a href="/" onmouseover="playSound()">JORDAN WITT</a></p>
         <div class="container text-center">
-            <div class="row m-3 ">
+            <div class="row m-3" id="nav">
                 <hr>
-                <div class="col-8 col-sm-4"><a href="/" id="project-one"><p>MOVIE PROJECT</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-two"><p>COFFEE PROJECT</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-three"><p>AD-LISTER</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-one" onmouseover="playSound()"><p>MOVIE PROJECT</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-two" onmouseover="playSound()"><p>COFFEE PROJECT</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-three" onmouseover="playSound()"><p>AD-LISTER</p></a></div>
                 <!-- Force next columns to break to new line -->
                 <div class="w-100"></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-four"><p>DATABASE DESIGN</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-five"><p>CONTACT MANAGER</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="project-six"><p>PROJECT-6</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-four" onmouseover="playSound()"><p>DATABASE DESIGN</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="project-five" onmouseover="playSound()"><p>CONTACT MANAGER</p></a></div>
+                <div class="col-8 col-sm-4"><a  id="project-six" onmouseover="playSound()"><p>TBT</p></a></div>
                 <hr>
             </div>
         </div>
@@ -60,9 +62,9 @@
         <div class="container text-center">
             <div class="row m-5 ">
                 <hr>
-                <div class="col-8 col-sm-4"><a href="/" id="contact"><p>CONTACT</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="socials"><p>SOCIALS</p></a></div>
-                <div class="col-8 col-sm-4"><a href="/" id="more-projects"><p>MORE</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="contact" onmouseover="playSound()"><p>CONTACT</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="socials" onmouseover="playSound()"><p>SOCIALS</p></a></div>
+                <div class="col-8 col-sm-4"><a href="/" id="more-projects" onmouseover="playSound()"><p>MORE</p></a></div>
                 <hr>
             </div>
         </div>
@@ -75,5 +77,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 <script src="js/personal-js.js"></script>
+<!--CURSOR FOUND ON https://github.com/tholman/cursor-effects-->
+<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 </body>
 </html>
