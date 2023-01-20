@@ -86,9 +86,6 @@ a:hover{
         transform: translateX(-100%);
     }
 }
-#project-one:hover{
-
-}
 /*project display*/
 #project-display{
     height: 300px;
