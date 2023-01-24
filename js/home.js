@@ -1,4 +1,4 @@
-//PROJECT IN NAV GRABS
+//----------------------------------------PROJECT IN NAV GRABS---------------------------
 let jordanImg = document.getElementById("jordan");
 let projectOne = document.getElementById("project-one");
 let projectTwo = document.getElementById("project-two");
@@ -7,40 +7,11 @@ let projectFour = document.getElementById("project-four");
 let projectFive = document.getElementById("project-five");
 let projectSix = document.getElementById("project-six"); //not being used...YET
 let projectDisplay = document.getElementById("project-display");
-
-//PARAGRAPH GRABS
+//---------------------------------------PARAGRAPH GRABS--------------------------------
 let paragraghOne = document.getElementById("paragraph-one");
 let paragraghTwo = document.getElementById("paragraph-two");
 let paragraghThree = document.getElementById("paragraph-three");
-
-//STYLING CSS DARK MODE
-let body = document.getElementById("body");
-let border = document.getElementById("border");
-let moon = document.getElementById("moon");
-let marquee = document.getElementById("marqueeText");
-let darkMode = false;
-
-
-moon.addEventListener("click", function () {
-    darkMode = !darkMode;
-    if (darkMode) {
-        body.classList.add("dark-mode");
-        projectDisplay.classList.add("dark-mode-shadow");
-        border.classList.add("dark-mode-border");
-        projectOne.classList.add("dark-mode-a:hover")
-        marquee.classList.add("dark-mode-marqueeText");
-        moon.classList.add("dark-mode-moon");
-    } else {
-        body.classList.remove("dark-mode");
-        projectDisplay.classList.remove("dark-mode-shadow");
-        border.classList.remove("dark-mode-border");
-        projectOne.classList.remove("dark-mode-a:hover")
-        marquee.classList.remove("dark-mode-marqueeText");
-        moon.classList.remove("dark-mode-moon");
-    }
-});
-
-//EVENT LISTENERS FOR HOME PAGE
+//-----------------------------------EVENT LISTENERS FOR HOME PAGE-----------------------
 jordanImg.addEventListener("mouseover", function (){
     projectDisplay.src = "images/jordan.jpeg";
     paragraghOne.innerText = "Hello There,"
@@ -72,8 +43,33 @@ projectFive.addEventListener("mouseover", function (){
     projectDisplay.src = "/images/contact-manager.jpg";
 })
 
+//----------------------------------STYLING CSS DARK MODE--------------------------------
+let body = document.getElementById("body");
+let border = document.getElementById("border");
+let moon = document.getElementById("moon");
+let marquee = document.getElementById("marqueeText");
+let darkMode = false;
 
-//WELCOMING MARQUEE
+moon.addEventListener("click", function () {
+    darkMode = !darkMode;
+    if (darkMode) {
+        body.classList.add("dark-mode");
+        projectDisplay.classList.add("dark-mode-shadow");
+        border.classList.add("dark-mode-border");
+        projectOne.classList.add("dark-mode-a:hover")
+        marquee.classList.add("dark-mode-marqueeText");
+        moon.classList.add("dark-mode-moon");
+    } else {
+        body.classList.remove("dark-mode");
+        projectDisplay.classList.remove("dark-mode-shadow");
+        border.classList.remove("dark-mode-border");
+        projectOne.classList.remove("dark-mode-a:hover")
+        marquee.classList.remove("dark-mode-marqueeText");
+        moon.classList.remove("dark-mode-moon");
+    }
+});
+
+//---------------------------------------WELCOMING MARQUEE-------------------------------
 let messages = ['WELCOME', 'HELLO', "BUENOS DIAS", 'HI', 'WELCOME BACK', "HOWDY", "BONJOUR", "WILLKOMMEN", "欢迎", "こんにちは", "안녕하세요"];
 let counter = 0;
 function updateMarquee() {
@@ -84,7 +80,7 @@ function updateMarquee() {
 setInterval(updateMarquee, 1500);
 
 
-//CURSOR
+//-------------------------------------------CURSOR---------------------------------------
 $(document).ready(function() {
     $(document).on('mousemove', function(e) {
         $('#circularCursor').css({
@@ -93,14 +89,6 @@ $(document).ready(function() {
         });
     })
 });
-
-//HOVER SOUND
-function playSoundHover() {
-    let audio = new Audio("sounds/zapsplat_multimedia_button_click_007_53868.mp3");
-    audio.play();
-}
-//CLICK SOUND
-
 
 //CODEPEN EXAMPLE **** NOT MY CODE
 //CURSOR FOUND ON https://github.com/tholman/cursor-effects
