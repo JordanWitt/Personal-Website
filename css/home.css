@@ -4,6 +4,44 @@
 html{
     cursor: none;
 }
+.moon{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 70px;
+    margin-bottom: -20px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    box-shadow: -7px 2px 0 4px rgba(248, 46, 253, 0.73);
+    transform: rotate(-10deg);
+    padding: 10px;
+}
+.dark-mode-moon{
+    box-shadow: -7px 2px 0 4px #dea1de !important;
+}
+.dark-mode-marqueeText{
+    color: #fffba1 !important;
+}
+.dark-mode moon{
+    box-shadow: -7px 2px 0 4px rgb(213, 236, 111);!important;
+}
+.dark-mode {
+    background-color: #2b442b;
+    color: #fffba1;!important;
+}
+.dark-mode-shadow{
+    box-shadow: none;
+}
+.dark-mode-border{
+    background-color: #385b38 !important;
+    border: 3px solid #000000 !important;
+}
+.dark-mode a {
+    color: #fffba1;!important;
+}
+.dark-mode a:hover{
+    color: #dea1de;!important;
+}
 /*page fade*/
 body {
     animation: fadeInAnimation ease 3s;
@@ -105,7 +143,6 @@ a:hover{
 #project-display{
     height: 300px;
     width: 240px;
-    box-shadow: 10px 15px 15px;
 }
 #project-display:hover {
     transition: width 1s, height 1s, transform 1s ease;
