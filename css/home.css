@@ -6,7 +6,7 @@ html{
 }
 .moon{
     position: relative;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 70px;
     margin-bottom: -20px;
     width: 1px;
@@ -113,7 +113,7 @@ a:hover{
     /* Apply animation to this element */
     -moz-animation: marquee 25s linear infinite;
     -webkit-animation: marquee 25s linear infinite;
-    animation: marquee 25s linear infinite;
+    animation: marquee 27s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes marquee {
@@ -126,13 +126,13 @@ a:hover{
 }
 @keyframes marquee{
     0%   {
-        -moz-transform: translateX(100%); /* Firefox bug fix */
-        -webkit-transform: translateX(100%); /* Firefox bug fix */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
         transform: translateX(100%);
     }
     100% {
-        -moz-transform: translateX(-100%); /* Firefox bug fix */
-        -webkit-transform: translateX(-100%); /* Firefox bug fix */
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
 }

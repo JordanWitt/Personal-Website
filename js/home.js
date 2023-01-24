@@ -70,14 +70,14 @@ moon.addEventListener("click", function () {
 });
 
 //---------------------------------------WELCOMING MARQUEE-------------------------------
-let messages = ['WELCOME', 'HELLO', "BUENOS DIAS", 'HI', 'WELCOME BACK', "HOWDY", "BONJOUR", "WILLKOMMEN", "欢迎", "こんにちは", "안녕하세요"];
+let messages = ['WELCOME', 'HELLO', "BUENOS DIAS", 'HI', 'WELCOME BACK', "HOWDY", "BONJOUR", "WILLKOMMEN", "欢迎", "こんにちは", "안녕하세요", "CIAO", "G'DAY", "KARIBU", "WELINA", "AFIO MAI", "ULIHELISDI" ];
 let counter = 0;
 function updateMarquee() {
     let container = document.getElementById("marqueeText");
     container.innerHTML = messages[counter];
     counter = (counter + 1) % messages.length;
 }
-setInterval(updateMarquee, 1500);
+setInterval(updateMarquee, 1000);
 
 
 //-------------------------------------------CURSOR---------------------------------------
@@ -93,5 +93,5 @@ $(document).ready(function() {
 //CODEPEN EXAMPLE **** NOT MY CODE
 //CURSOR FOUND ON https://github.com/tholman/cursor-effects
 window.addEventListener('load', (event) => {
-    new cursoreffects.fairyDustCursor({colors: ["rgb(255,31,127)", "rgb(255,169,255)", "rgb(248,60,255)"]});
+    new cursoreffects.fairyDustCursor({colors: ["rgb(249, 75, 255)", "#dea1de", "rgb(183,8,189)"]});
 });
