@@ -36,7 +36,8 @@ projectTwo.addEventListener("mouseover", function (){
 projectThree.addEventListener("mouseover", function (){
     projectDisplay.src = "images/adlister.jpg";
     paragraghOne.innerText = "Ad-Lister Project:"
-    paragraghTwo.innerText = "Back-end Application for creating and displaying ads\n\n1. "
+    paragraghTwo.innerText = "Back-end Application for creating and displaying ads\n\n1. Implement functionality that allows users to search through the ads in your database.\n2. Show user's ads on their profile page\n3. Allow users to update and delete ads\n4. Intended Redirects"
+    paragraghThree.innerText ="Pros:\n 1. Working on a team of 3\n2. No merge conflicts on GitHub\n3. Completed a clean functioning website\n\nCons:\n 1. Took a while to understand all the moving pieces\n2. Could have used and extra day or 2 to complete \nall of the suggested functionality\n3. We were not using Spring Boot"
 });
 projectFour.addEventListener("mouseover", function (){
     projectDisplay.src = "images/database.jpg";
@@ -46,22 +47,16 @@ projectFive.addEventListener("mouseover", function (){
 })
 
 
-//API FOR MARQUEE TO DISPLAY FACTS
-let factsApi = 'https://buttoned-awake-trumpet.glitch.me/jokes';
-let container = document.getElementById("marqueeShow")
-function getJokes() {
-    fetch(factsApi)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            data.forEach( function (data) {
-                container.innerHTML = `<div class="marquee" id="marqueeShow">\n` +
-                    `    <span id="marqueeText">${data.joke}</span>\n` +
-                    `</div>`;
-            })
-        });
+//WELCOMING MARQUEE
+let messages = ['WELCOME', 'HELLO', "BUENOS DIAS", 'HI', 'WELCOME BACK', "HOWDY", "BONJOUR", "WILLKOMMEN", "欢迎", "こんにちは", "안녕하세요"];
+let counter = 0;
+function updateMarquee() {
+    let container = document.getElementById("marqueeText");
+    container.innerHTML = messages[counter];
+    counter = (counter + 1) % messages.length;
 }
-getJokes();
+setInterval(updateMarquee, 1500);
+
 
 //CURSOR
 $(document).ready(function() {
@@ -74,10 +69,12 @@ $(document).ready(function() {
 });
 
 //HOVER SOUND
-function playSound() {
+function playSoundHover() {
     let audio = new Audio("sounds/zapsplat_multimedia_button_click_007_53868.mp3");
     audio.play();
 }
+//CLICK SOUND
+
 
 //CODEPEN EXAMPLE **** NOT MY CODE
 //CURSOR FOUND ON https://github.com/tholman/cursor-effects

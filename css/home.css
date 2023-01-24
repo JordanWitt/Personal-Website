@@ -4,6 +4,20 @@
 html{
     cursor: none;
 }
+/*page fade*/
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 audio{
     display: none;
 }
@@ -36,6 +50,7 @@ a{
     text-decoration: none;
     color: black;
     cursor: none;
+    margin: 10px;
 }
 a:hover{
     color: rgb(249, 75, 255);
