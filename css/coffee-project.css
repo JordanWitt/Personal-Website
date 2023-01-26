@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+#border{
+    border: #b1ef39 1px solid;
+    padding: 20px;
+}
+#one{
+    border: #dfff11;
+}
