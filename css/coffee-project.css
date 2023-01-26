@@ -1,10 +1,7 @@
-body{
+body {
     background-color: black;
+    background-size: 170px 170px;
+
 }
-#border{
-    border: #b1ef39 1px solid;
-    padding: 20px;
-}
-#one{
-    border: #dfff11;
-}
+
+
